@@ -2,8 +2,6 @@
 
 ### [➡️ View the live site](https://mcgee2262.github.io/frosted-freaks/)
 
-[![Deploy](https://github.com/mcgee2262/frosted-freaks/actions/workflows/deploy.yml/badge.svg)](https://github.com/mcgee2262/frosted-freaks/actions/workflows/deploy.yml)
-
 Lead-generation site for a residential snow-shoveling business serving Reston, Herndon and Great Falls, Virginia.
 React 19 + TypeScript + Tailwind CSS v4, built with Vite.
 
@@ -16,9 +14,8 @@ npm run preview  # serve the production build
 ```
 
 Routes: `/` (Home), `/services`, `/service-areas`, `/quote`. The app uses client-side routing, so the host must
-serve `index.html` for unknown paths (Netlify `_redirects`, Vercel rewrites, or similar). On GitHub Pages this is
-handled by `.github/workflows/deploy.yml`, which copies `index.html` to `404.html` and builds with
-`VITE_BASE=/frosted-freaks/`. For a root domain, build without `VITE_BASE`.
+serve `index.html` for unknown paths (Netlify `_redirects`, Vercel rewrites, or similar). On GitHub Pages the live site is the `gh-pages` branch: build with `VITE_BASE=/frosted-freaks/`, copy
+`dist/index.html` to `dist/404.html` (Pages has no SPA fallback), and push `dist/` to `gh-pages`. For a root domain, build without `VITE_BASE`.
 
 ## Configuration
 
