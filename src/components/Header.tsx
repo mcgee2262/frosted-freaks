@@ -37,7 +37,7 @@ export function Header() {
       <a href="#main" className="skip-link btn btn-warm">Skip to content</a>
       <div className="wrap flex h-20 items-center justify-between gap-4">
         <Link to="/" className="flex items-center gap-2 rounded-full pr-2" aria-label="Frosted Freaks Services, home">
-          <Snowman size={60} full={false} />
+          <Snowman size={60} full={false} texture={false} />
           <span className="text-xl font-semibold leading-none tracking-tight sm:text-2xl">
             Frosted Freaks
             <span className="block text-small font-normal tracking-normal text-glacier">Services</span>
